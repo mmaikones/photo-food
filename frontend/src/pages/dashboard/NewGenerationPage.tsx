@@ -50,7 +50,7 @@ const templateFallbackImages: Record<string, string> = {
   "saudavel-fitness": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop"
 };
 
-const isAbsoluteUrl = (value?: string | null) =>
+const isAbsoluteUrl = (value?: string | null): value is string =>
   !!value &&
   (value.startsWith("http://") ||
     value.startsWith("https://") ||

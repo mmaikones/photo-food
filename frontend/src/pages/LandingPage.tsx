@@ -205,7 +205,7 @@ export default function LandingPage() {
           </div>
         </div>
         <Container>
-          <div className="hero__content animate-fade-in-up pt-28">
+          <div className="hero__content animate-fade-in-up pt-20">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary-50 px-4 py-2 text-xs font-semibold text-primary-700">
               <Sparkles size={14} />
               Fotos profissionais em minutos

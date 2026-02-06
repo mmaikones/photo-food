@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [isAuthenticated, fetchBalance]);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border-subtle bg-bg-card/80 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-border-subtle bg-bg-card shadow-lg">
       <div className="mx-auto flex h-[72px] w-full max-w-7xl items-center justify-between px-6">
         <div className="flex items-center gap-3">
           <button

@@ -102,6 +102,7 @@ h6 {
   align-items: center;
   background: var(--gradient-mesh);
   overflow: hidden;
+  padding-top: 72px;
 }
 
 .hero__content {
@@ -114,7 +115,8 @@ h6 {
 
 .hero__floating-elements {
   position: absolute;
-  inset: 0;
+  inset: auto 0 0 0;
+  top: 72px;
   z-index: 1;
   pointer-events: none;
 }

@@ -355,7 +355,7 @@ export default function LandingPage() {
 
       <motion.section
         id="templates"
-        className="bg-[#f8fafc] py-20"
+        className="bg-white py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -389,7 +389,7 @@ export default function LandingPage() {
       </motion.section>
 
       <motion.section
-        className="bg-[#f8fafc] py-20"
+        className="bg-white py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -473,7 +473,7 @@ export default function LandingPage() {
       </motion.section>
 
       <motion.section
-        className="bg-[#f8fafc] py-20"
+        className="bg-white py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"

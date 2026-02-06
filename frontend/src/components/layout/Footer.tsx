@@ -1,5 +1,3 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
-
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 text-neutral-200">
@@ -9,20 +7,6 @@ export default function Footer() {
           <p className="mt-3 text-sm text-neutral-400">
             Transforme fotos simples em imagens profissionais para delivery e redes sociais.
           </p>
-          <div className="mt-4 flex items-center gap-3 text-neutral-400">
-            <a className="rounded-lg p-2 hover:bg-neutral-800" href="#" aria-label="Facebook">
-              <Facebook size={18} />
-            </a>
-            <a className="rounded-lg p-2 hover:bg-neutral-800" href="#" aria-label="Instagram">
-              <Instagram size={18} />
-            </a>
-            <a className="rounded-lg p-2 hover:bg-neutral-800" href="#" aria-label="Youtube">
-              <Youtube size={18} />
-            </a>
-            <a className="rounded-lg p-2 hover:bg-neutral-800" href="#" aria-label="LinkedIn">
-              <Linkedin size={18} />
-            </a>
-          </div>
         </div>
         <div>
           <h4 className="text-sm font-semibold text-white">Produto</h4>
@@ -49,8 +33,19 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-neutral-800 py-6 text-center text-xs text-neutral-500">
-        © 2026 FoodPhoto Studio. Todos os direitos reservados.
+      <div className="border-t border-neutral-800">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-neutral-300 md:flex-row">
+          <span>Pronto para comecar?</span>
+          <a
+            href="/cadastro"
+            className="rounded-full bg-primary-600 px-5 py-2 text-xs font-semibold text-white hover:bg-primary-500"
+          >
+            Crie sua conta gratis
+          </a>
+        </div>
+        <div className="border-t border-neutral-800 py-6 text-center text-xs text-neutral-500">
+          © 2026 FoodPhoto Studio. Todos os direitos reservados.
+        </div>
       </div>
     </footer>
   );

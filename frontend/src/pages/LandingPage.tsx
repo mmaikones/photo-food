@@ -330,13 +330,21 @@ export default function LandingPage() {
                 icon: Download
               }
             ].map((item) => (
-              <Card key={item.step} hoverable className="relative overflow-hidden border border-transparent bg-[#5b21b6] text-white">
-                <span className="text-sm font-semibold text-white/80">{item.step}</span>
-                <div className="mt-6 flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white">
-                  <item.icon size={22} />
+              <Card
+                key={item.step}
+                hoverable
+                className="relative flex h-full flex-col justify-between gap-6 border border-transparent bg-[#5b21b6] text-white"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-xs font-semibold uppercase tracking-wide text-white/80">{item.step}</span>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-white">
+                    <item.icon size={22} />
+                  </div>
                 </div>
-                <h3 className="mt-5 text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-3 text-sm text-white/80">{item.description}</p>
+                <div>
+                  <h3 className="text-xl font-semibold text-white">{item.title}</h3>
+                  <p className="mt-2 text-sm text-white/80">{item.description}</p>
+                </div>
               </Card>
             ))}
           </div>

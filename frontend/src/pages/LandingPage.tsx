@@ -263,7 +263,7 @@ export default function LandingPage() {
       </section>
 
       <motion.section
-        className="border-y border-border-subtle bg-bg-page py-12"
+        className="bg-[#5b21b6] py-12"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -271,9 +271,9 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-sm font-medium text-text-muted">Marcas que confiam</p>
+            <p className="text-sm font-semibold text-white">Marcas que confiam</p>
           </div>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm font-semibold text-text-subtle">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm font-semibold text-white">
             {[
               "Bistro 21",
               "Bella Pizza",
@@ -284,7 +284,7 @@ export default function LandingPage() {
             ].map((logo) => (
               <span
                 key={logo}
-                className="rounded-full border border-border-subtle bg-white/5 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white/70"
+                className="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-white"
               >
                 {logo}
               </span>
@@ -336,7 +336,7 @@ export default function LandingPage() {
                   <item.icon size={22} />
                 </div>
                 <h3 className="mt-5 text-xl font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{item.description}</p>
+                <p className="mt-3 text-sm text-slate-700">{item.description}</p>
               </Card>
             ))}
           </div>

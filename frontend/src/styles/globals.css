@@ -95,6 +95,35 @@ h6 {
   background-size: 40px 40px;
 }
 
+.section-light {
+  background: #f8fafc;
+  color-scheme: light;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f1f5f9;
+  --color-bg-elevated: #ffffff;
+  --color-bg-input: #ffffff;
+  --border-subtle: #e2e8f0;
+  --border-default: #cbd5e1;
+}
+
+.section-purple {
+  background: linear-gradient(180deg, #5b21b6 0%, #4c1d95 100%);
+  color-scheme: dark;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --text-subtle: rgba(255, 255, 255, 0.5);
+  --color-bg-card: rgba(255, 255, 255, 0.08);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.12);
+  --color-bg-elevated: rgba(255, 255, 255, 0.12);
+  --border-subtle: rgba(255, 255, 255, 0.14);
+  --border-default: rgba(255, 255, 255, 0.2);
+}
+
 .hero {
   position: relative;
   min-height: 100vh;

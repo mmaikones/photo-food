@@ -9,8 +9,6 @@ import {
   Star,
   Check,
   ArrowRight,
-  Instagram,
-  MessageCircle,
   Store,
   Utensils,
   Coffee,
@@ -179,12 +177,6 @@ export default function LandingPage() {
       <section className="hero">
         <div className="absolute inset-0 bg-dot-pattern-subtle opacity-40" />
         <div className="hero__floating-elements">
-          <div className="floating-social floating-social--instagram floating-element--delay-2" style={{ top: "18%", right: "12%" }}>
-            <Instagram size={20} />
-          </div>
-          <div className="floating-social floating-social--whatsapp floating-element--delay-3" style={{ top: "35%", left: "12%" }}>
-            <MessageCircle size={20} />
-          </div>
           <div className="floating-stat floating-element--delay-1" style={{ bottom: "25%", left: "8%" }}>
             <div className="floating-stat__icon">
               <Sparkles size={18} />
@@ -224,7 +216,7 @@ export default function LandingPage() {
                 Ver exemplos
               </Button>
             </div>
-            <p className="mt-4 text-xs text-text-muted">✓ 10 fotos gratis • Sem cartao de credito</p>
+            <p className="mt-4 text-xs text-text-muted">✓ 5 fotos gratis • Sem cartao de credito</p>
             <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <AvatarStack
                 avatars={[
@@ -270,9 +262,10 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#0a0a0f] to-[#f8fafc]" />
       <motion.section
         id="como-funciona"
-        className="bg-bg-page py-20"
+        className="section-light bg-gradient-to-b from-[#0a0a0f] via-[#f8fafc] to-[#f8fafc] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -320,8 +313,9 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#f8fafc] to-[#5b21b6]" />
       <motion.section
-        className="bg-bg-card py-20"
+        className="section-purple py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -361,6 +355,7 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#4c1d95] to-[#0a0a0f]" />
       <motion.section
         id="templates"
         className="bg-bg-page py-20"
@@ -396,8 +391,9 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#0a0a0f] to-[#5b21b6]" />
       <motion.section
-        className="bg-bg-card py-20"
+        className="section-purple py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -410,8 +406,8 @@ export default function LandingPage() {
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {businessTypes.map((item) => (
-              <Card key={item.label} className="flex items-center gap-3 rounded-xl border border-border-subtle bg-bg-page p-4 shadow-card">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary-50 text-primary-600">
+              <Card key={item.label} className="flex items-center gap-3 rounded-xl border border-border-subtle bg-white/10 p-4 shadow-card">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/15 text-white">
                   <item.icon size={20} />
                 </div>
                 <div className="text-sm font-semibold text-white">{item.label}</div>
@@ -421,9 +417,10 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#4c1d95] to-[#f8fafc]" />
       <motion.section
         id="precos"
-        className="bg-bg-page py-20"
+        className="section-light py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -438,7 +435,7 @@ export default function LandingPage() {
             <Card className="flex h-full flex-col">
               <h3 className="text-card-title">Starter</h3>
               <p className="text-body-sm mt-2">Para testar sem compromisso</p>
-              <div className="mt-6 text-3xl font-bold text-white">Gratis</div>
+              <div className="mt-6 text-3xl font-bold text-text-primary">Gratis</div>
               <ul className="mt-6 space-y-3 text-sm text-text-muted">
                 <li className="flex items-center gap-2"><Check size={16} /> 5 creditos para testar</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Marca d'agua nas fotos</li>
@@ -450,7 +447,7 @@ export default function LandingPage() {
               <Badge variant="accent" className="absolute right-6 top-6">Mais Popular</Badge>
               <h3 className="text-card-title">Pro</h3>
               <p className="text-body-sm mt-2">Para restaurantes em crescimento</p>
-              <div className="mt-6 text-3xl font-bold text-white">R$ 49<span className="text-base font-medium text-text-muted">/mes</span></div>
+              <div className="mt-6 text-3xl font-bold text-text-primary">R$ 49<span className="text-base font-medium text-text-muted">/mes</span></div>
               <ul className="mt-6 space-y-3 text-sm text-text-muted">
                 <li className="flex items-center gap-2"><Check size={16} /> 50 creditos por mes</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Sem marca d'agua</li>
@@ -463,7 +460,7 @@ export default function LandingPage() {
             <Card className="flex h-full flex-col">
               <h3 className="text-card-title">Business</h3>
               <p className="text-body-sm mt-2">Para operacoes maiores</p>
-              <div className="mt-6 text-3xl font-bold text-white">R$ 149<span className="text-base font-medium text-text-muted">/mes</span></div>
+              <div className="mt-6 text-3xl font-bold text-text-primary">R$ 149<span className="text-base font-medium text-text-muted">/mes</span></div>
               <ul className="mt-6 space-y-3 text-sm text-text-muted">
                 <li className="flex items-center gap-2"><Check size={16} /> 200 creditos por mes</li>
                 <li className="flex items-center gap-2"><Check size={16} /> API access</li>
@@ -477,7 +474,7 @@ export default function LandingPage() {
       </motion.section>
 
       <motion.section
-        className="bg-bg-card py-20"
+        className="section-light py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -490,21 +487,22 @@ export default function LandingPage() {
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {testimonials.map((item) => (
-              <Card key={item.name}>
+              <Card key={item.name} className="border border-slate-200 bg-white text-slate-900 shadow-md">
                 <div className="flex items-center gap-1 text-yellow-500">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <Star key={index} size={16} fill="currentColor" />
                   ))}
                 </div>
                 <p className="text-body mt-4">“{item.text}”</p>
-                <div className="mt-6 text-sm font-semibold text-white">{item.name}</div>
-                <div className="text-xs text-text-muted">{item.business}</div>
+                <div className="mt-6 text-sm font-semibold text-slate-900">{item.name}</div>
+                <div className="text-xs text-slate-500">{item.business}</div>
               </Card>
             ))}
           </div>
         </Container>
       </motion.section>
 
+      <div className="h-12 bg-gradient-to-b from-[#f8fafc] to-[#0a0a0f]" />
       <motion.section
         className="bg-bg-page py-20"
         variants={fadeInUp}

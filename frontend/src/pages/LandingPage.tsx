@@ -262,10 +262,9 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#0a0a0f] to-[#f8fafc]" />
       <motion.section
         id="como-funciona"
-        className="section-light bg-gradient-to-b from-[#0a0a0f] via-[#f8fafc] to-[#f8fafc] py-20"
+        className="bg-[#f8fafc] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -273,9 +272,9 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">Como funciona</p>
-            <h2 className="text-section-title mt-3">3 passos simples para vender mais</h2>
-            <p className="text-body mx-auto mt-4 max-w-2xl">
+            <p className="text-eyebrow text-primary-600">Como funciona</p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900">3 passos simples para vender mais</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600">
               Um fluxo rapido para transformar fotos do celular em imagens prontas para cardapios e delivery.
             </p>
           </div>
@@ -300,22 +299,21 @@ export default function LandingPage() {
                 icon: Download
               }
             ].map((item) => (
-              <Card key={item.step} hoverable className="relative overflow-hidden">
+              <Card key={item.step} hoverable className="relative overflow-hidden border border-slate-200 bg-white text-slate-900">
                 <span className="text-sm font-semibold text-primary-600">{item.step}</span>
                 <div className="mt-6 flex h-12 w-12 items-center justify-center rounded-xl bg-primary-50 text-primary-600">
                   <item.icon size={22} />
                 </div>
-                <h3 className="text-card-title mt-5">{item.title}</h3>
-                <p className="text-body-sm mt-3">{item.description}</p>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900">{item.title}</h3>
+                <p className="mt-3 text-sm text-slate-600">{item.description}</p>
               </Card>
             ))}
           </div>
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#f8fafc] to-[#5b21b6]" />
       <motion.section
-        className="section-purple py-20"
+        className="bg-[#5b21b6] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -323,12 +321,12 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">Antes e depois</p>
-            <h2 className="text-section-title mt-3">Veja a transformacao</h2>
+            <p className="text-eyebrow text-white/80">Antes e depois</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">Veja a transformacao</h2>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {beforeAfter.map((item, index) => (
-              <Card key={`${item.after}-${index}`} className="overflow-hidden">
+              <Card key={`${item.after}-${index}`} className="overflow-hidden border border-slate-200 bg-white text-slate-900">
                 <div className="grid gap-3">
                   <div>
                     <Badge variant="neutral">Antes</Badge>
@@ -355,10 +353,9 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#4c1d95] to-[#0a0a0f]" />
       <motion.section
         id="templates"
-        className="bg-bg-page py-20"
+        className="bg-[#f8fafc] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -367,8 +364,8 @@ export default function LandingPage() {
         <Container>
           <div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:text-left">
             <div>
-              <p className="text-eyebrow">Templates</p>
-              <h2 className="text-section-title mt-3">Estilos para cada necessidade</h2>
+              <p className="text-eyebrow text-primary-600">Templates</p>
+              <h2 className="mt-3 text-3xl font-bold text-slate-900">Estilos para cada necessidade</h2>
             </div>
             <Button variant="secondary" size="md" className="rounded-full px-6">
               Ver todos <ArrowRight size={16} />
@@ -376,24 +373,23 @@ export default function LandingPage() {
           </div>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {templates.map((template) => (
-              <Card key={template.name} hoverable className="overflow-hidden">
+              <Card key={template.name} hoverable className="overflow-hidden border border-slate-200 bg-white text-slate-900">
                 <div className="relative">
                   <img src={template.image} alt={template.name} className="h-40 w-full rounded-xl object-cover" loading="lazy" />
                   <Badge variant="primary" className="absolute left-3 top-3">
                     {template.badge}
                   </Badge>
                 </div>
-                <h3 className="text-card-title mt-5">{template.name}</h3>
-                <p className="text-body-sm mt-2">{template.description}</p>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900">{template.name}</h3>
+                <p className="mt-2 text-sm text-slate-600">{template.description}</p>
               </Card>
             ))}
           </div>
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#0a0a0f] to-[#5b21b6]" />
       <motion.section
-        className="section-purple py-20"
+        className="bg-[#f8fafc] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -401,13 +397,13 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">Para quem</p>
-            <h2 className="text-section-title mt-3">Perfeito para seu negocio</h2>
+            <p className="text-eyebrow text-primary-600">Para quem</p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900">Perfeito para seu negocio</h2>
           </div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {businessTypes.map((item) => (
-              <Card key={item.label} className="flex items-center gap-3 rounded-xl border border-border-subtle bg-white/10 p-4 shadow-card">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-white/15 text-white">
+              <Card key={item.label} className="flex items-center gap-3 rounded-xl border border-slate-900 bg-[#0a0a0f] p-4 shadow-card">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-red-500 text-white">
                   <item.icon size={20} />
                 </div>
                 <div className="text-sm font-semibold text-white">{item.label}</div>
@@ -417,10 +413,9 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#4c1d95] to-[#f8fafc]" />
       <motion.section
         id="precos"
-        className="section-light py-20"
+        className="bg-[#0a0a0f] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -428,27 +423,29 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">Planos</p>
-            <h2 className="text-section-title mt-3">Planos simples, sem surpresas</h2>
+            <p className="text-eyebrow text-white/70">Planos</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">Planos simples, sem surpresas</h2>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <Card className="flex h-full flex-col">
-              <h3 className="text-card-title">Starter</h3>
-              <p className="text-body-sm mt-2">Para testar sem compromisso</p>
-              <div className="mt-6 text-3xl font-bold text-text-primary">Gratis</div>
-              <ul className="mt-6 space-y-3 text-sm text-text-muted">
+            <Card className="flex h-full flex-col border border-slate-200 bg-white text-slate-900">
+              <h3 className="text-xl font-semibold text-slate-900">Starter</h3>
+              <p className="mt-2 text-sm text-slate-600">Para testar sem compromisso</p>
+              <div className="mt-6 text-3xl font-bold text-slate-900">Gratis</div>
+              <ul className="mt-6 space-y-3 text-sm text-slate-600">
                 <li className="flex items-center gap-2"><Check size={16} /> 5 creditos para testar</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Marca d'agua nas fotos</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Resolucao padrao</li>
               </ul>
               <Button className="mt-8 w-full rounded-full">Comecar Gratis</Button>
             </Card>
-            <Card className="relative flex h-full flex-col border-primary-200 shadow-lg">
+            <Card className="relative flex h-full flex-col border border-slate-200 bg-white text-slate-900 shadow-lg">
               <Badge variant="accent" className="absolute right-6 top-6">Mais Popular</Badge>
-              <h3 className="text-card-title">Pro</h3>
-              <p className="text-body-sm mt-2">Para restaurantes em crescimento</p>
-              <div className="mt-6 text-3xl font-bold text-text-primary">R$ 49<span className="text-base font-medium text-text-muted">/mes</span></div>
-              <ul className="mt-6 space-y-3 text-sm text-text-muted">
+              <h3 className="text-xl font-semibold text-slate-900">Pro</h3>
+              <p className="mt-2 text-sm text-slate-600">Para restaurantes em crescimento</p>
+              <div className="mt-6 text-3xl font-bold text-slate-900">
+                R$ 49<span className="text-base font-medium text-slate-600">/mes</span>
+              </div>
+              <ul className="mt-6 space-y-3 text-sm text-slate-600">
                 <li className="flex items-center gap-2"><Check size={16} /> 50 creditos por mes</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Sem marca d'agua</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Alta resolucao</li>
@@ -457,11 +454,13 @@ export default function LandingPage() {
               </ul>
               <Button variant="accent" className="mt-8 w-full rounded-full">Assinar Pro</Button>
             </Card>
-            <Card className="flex h-full flex-col">
-              <h3 className="text-card-title">Business</h3>
-              <p className="text-body-sm mt-2">Para operacoes maiores</p>
-              <div className="mt-6 text-3xl font-bold text-text-primary">R$ 149<span className="text-base font-medium text-text-muted">/mes</span></div>
-              <ul className="mt-6 space-y-3 text-sm text-text-muted">
+            <Card className="flex h-full flex-col border border-slate-200 bg-white text-slate-900">
+              <h3 className="text-xl font-semibold text-slate-900">Business</h3>
+              <p className="mt-2 text-sm text-slate-600">Para operacoes maiores</p>
+              <div className="mt-6 text-3xl font-bold text-slate-900">
+                R$ 149<span className="text-base font-medium text-slate-600">/mes</span>
+              </div>
+              <ul className="mt-6 space-y-3 text-sm text-slate-600">
                 <li className="flex items-center gap-2"><Check size={16} /> 200 creditos por mes</li>
                 <li className="flex items-center gap-2"><Check size={16} /> API access</li>
                 <li className="flex items-center gap-2"><Check size={16} /> Templates exclusivos</li>
@@ -474,7 +473,7 @@ export default function LandingPage() {
       </motion.section>
 
       <motion.section
-        className="section-light py-20"
+        className="bg-[#f8fafc] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -482,8 +481,8 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">Depoimentos</p>
-            <h2 className="text-section-title mt-3">O que nossos clientes dizem</h2>
+            <p className="text-eyebrow text-primary-600">Depoimentos</p>
+            <h2 className="mt-3 text-3xl font-bold text-slate-900">O que nossos clientes dizem</h2>
           </div>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {testimonials.map((item) => (
@@ -493,7 +492,7 @@ export default function LandingPage() {
                     <Star key={index} size={16} fill="currentColor" />
                   ))}
                 </div>
-                <p className="text-body mt-4">“{item.text}”</p>
+                <p className="mt-4 text-sm text-slate-700">“{item.text}”</p>
                 <div className="mt-6 text-sm font-semibold text-slate-900">{item.name}</div>
                 <div className="text-xs text-slate-500">{item.business}</div>
               </Card>
@@ -502,9 +501,8 @@ export default function LandingPage() {
         </Container>
       </motion.section>
 
-      <div className="h-12 bg-gradient-to-b from-[#f8fafc] to-[#0a0a0f]" />
       <motion.section
-        className="bg-bg-page py-20"
+        className="bg-[#0a0a0f] py-20"
         variants={fadeInUp}
         initial="hidden"
         whileInView="show"
@@ -512,21 +510,21 @@ export default function LandingPage() {
       >
         <Container>
           <div className="text-center">
-            <p className="text-eyebrow">FAQ</p>
-            <h2 className="text-section-title mt-3">Perguntas frequentes</h2>
+            <p className="text-eyebrow text-white/70">FAQ</p>
+            <h2 className="mt-3 text-3xl font-bold text-white">Perguntas frequentes</h2>
           </div>
           <div className="mx-auto mt-10 max-w-3xl space-y-3">
             {faqs.map((item, index) => (
-              <Card key={item.question} className="p-0">
+              <Card key={item.question} className="border border-slate-200 bg-white p-0 text-slate-900">
                 <button
-                  className="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-white"
+                  className="flex w-full items-center justify-between px-6 py-4 text-left text-sm font-semibold text-slate-900"
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                 >
                   {item.question}
                   <span className="text-primary-600">{openFaq === index ? "-" : "+"}</span>
                 </button>
                 {openFaq === index ? (
-                  <div className="px-6 pb-5 text-sm text-text-muted">{item.answer}</div>
+                  <div className="px-6 pb-5 text-sm text-slate-600">{item.answer}</div>
                 ) : null}
               </Card>
             ))}
